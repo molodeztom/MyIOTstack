@@ -4,7 +4,6 @@ services:
     container_name: grafana
     image: grafana/grafana
     restart: unless-stopped
-    user: "0"
     ports:
       - "3000:3000"
     environment:
