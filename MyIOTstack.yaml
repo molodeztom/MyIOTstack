@@ -29,7 +29,7 @@ services:
 
   nodered:
     container_name: nodered
-    image: nodered/node-red.latest
+    image: nodered/node-red:latest
     restart: unless-stopped
     user: "0"
     ports:
