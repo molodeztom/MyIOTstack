@@ -80,7 +80,6 @@ services:
       - "8089:80/tcp"
       #- "443:443/tcp"
     env_file:
-      - ./services/pihole/pihole.env
       - TZ=Europe/Berlin
     volumes:
        - ./volumes/pihole/etc-pihole/:/etc/pihole/
