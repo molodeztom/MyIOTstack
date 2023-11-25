@@ -84,13 +84,13 @@ services:
     volumes:
        - ./volumes/pihole/etc-pihole/:/etc/pihole/
        - ./volumes/pihole/etc-dnsmasq.d/:/etc/dnsmasq.d/
-    dns:
-      - 127.0.0.1
-      - 1.1.1.1
+    #dns:
+   #   - 127.0.0.1
+   #   - 1.1.1.1
     # Recommended but not required (DHCP needs NET_ADMIN)
     #   https://github.com/pi-hole/docker-pi-hole#note-on-capabilities
-    cap_add:
-      - NET_ADMIN
+    #cap_add:
+    #  - NET_ADMIN
     restart: unless-stopped
 
     
