@@ -96,7 +96,7 @@ services:
     container_name: mqtt-explorer
     image: smeagolworms4/mqtt-explorer
     ports: 
-      -"4000:4000"
+      - "4000:4000"
     environment:  
       - HTTP_Port=4000
       - CONFIG_PATH=/mqtt-explorer/config
